@@ -13,8 +13,8 @@ type Props = {
 const FlightCardContent = ({ flight }: Props) => {
   return (
     <>
-      <View style={{ gap: 16, padding: 16 }}>
-        {/* PLANE INFO AND TOTAL FLIGHT TIME */}
+      <View style={{ gap: 16, padding: 16,backgroundColor:COLORS.white }}>
+        {/* PLANE INFO AND FLIGHT DURATION */}
         <PlaneInfo flight={flight} />
 
         {/* DEPARTURE AND ARRIVAL INFO */}
@@ -22,8 +22,7 @@ const FlightCardContent = ({ flight }: Props) => {
           {/* DEPARTURE */}
           <FlightInfo
             status={FlightStatus.DEPARTURE}
-            date={flight.departureDate}
-            time={flight.departureTime}
+            dateTime={flight.departureDateTime}
             place={flight.from}
           />
 
@@ -33,8 +32,7 @@ const FlightCardContent = ({ flight }: Props) => {
           {/* ARRIVAL */}
           <FlightInfo
             status={FlightStatus.ARRIVAL}
-            date={flight.arrivalDate}
-            time={flight.arrivalTime}
+            dateTime={flight.arrivalDateTime}
             place={flight.to}
           />
         </View>

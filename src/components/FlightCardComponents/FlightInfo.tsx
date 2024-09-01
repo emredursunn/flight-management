@@ -3,15 +3,15 @@ import React from "react";
 import { TYPOGRAPHY } from "../../constants/typography";
 import COLORS from "../../constants/colors";
 import { FlightStatus } from "../../types/Flight";
+import { formatDate, formatTime } from "../../utils/helpers";
 
 type Props = {
   status: FlightStatus;
-  date: string;
-  time: string;
+  dateTime:Date,
   place: string;
 };
 
-const FlightInfo = ({ date, time, place, status }: Props) => {
+const FlightInfo = ({ dateTime, place, status }: Props) => {
   return (
     <View style={{gap:8}}>
       <View style={{ flexDirection: "row", gap: 4 }}>
@@ -24,7 +24,7 @@ const FlightInfo = ({ date, time, place, status }: Props) => {
           style={{ width: 20, height: 20 }}
         />
         <Text style={[TYPOGRAPHY.footnoteRegular, { color: COLORS.gray[500] }]}>
-          {date}
+          {formatDate(dateTime)}
         </Text>
       </View>
       <Text
@@ -47,7 +47,7 @@ const FlightInfo = ({ date, time, place, status }: Props) => {
           },
         ]}
       >
-        {time}
+        {formatTime(dateTime)}
       </Text>
     </View>
   );

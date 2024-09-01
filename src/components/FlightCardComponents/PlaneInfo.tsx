@@ -3,6 +3,7 @@ import React from 'react'
 import { Connection, Flight } from '../../types/Flight'
 import { TYPOGRAPHY } from '../../constants/typography'
 import COLORS from '../../constants/colors'
+import { calculateFlightDuration } from '../../utils/helpers'
 
 type Props = {
     flight:Flight | Connection
@@ -23,11 +24,11 @@ const PlaneInfo = ({flight}:Props) => {
             {flight.plane.id + " - " + flight.plane.name}
           </Text>
         </View>
-        <View style={styles.flightTimeBox}>
+        <View style={styles.flightDurationBox}>
           <Text
             style={[TYPOGRAPHY.caption1Medium, { color: COLORS.orange[700] }]}
           >
-            {flight.departureTime}
+            {calculateFlightDuration(flight.departureDateTime,flight.arrivalDateTime)}
           </Text>
         </View>
       </View>
@@ -37,7 +38,7 @@ const PlaneInfo = ({flight}:Props) => {
 export default PlaneInfo
 
 const styles = StyleSheet.create({
-    flightTimeBox: {
+    flightDurationBox: {
         borderRadius: 7,
         borderWidth: 0.5,
         paddingVertical: 4,
