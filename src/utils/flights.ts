@@ -11,7 +11,7 @@ export const flights: Flight[] = [
     arrivalTime: "11:00 AM",
     arrivalDate:"24 Apr 2024",
     plane:planes[0],
-    transfers: [],
+    connections: [],
   },
   {
     code: "XYZ",
@@ -22,7 +22,7 @@ export const flights: Flight[] = [
     arrivalTime: "11:00 AM",
     arrivalDate:"24 Apr 2024",
     plane:planes[0],
-    transfers: [
+    connections: [
       {
         code: "XYZ1",
         from: "San Francisco",
