@@ -3,6 +3,7 @@ import { Flight } from "../../types/Flight";
 import ConnectingFlightCard from "./ConnectingFlightCard";
 import DirectFlightCard from "./DirectFlightCard";
 import { useFlightModalStore } from "../../store/flightModalStore";
+import Animated, { FadeOut, SlideInLeft } from "react-native-reanimated";
 
 type Props = {
   flight: Flight;
@@ -18,6 +19,7 @@ const FlightCard = ({ flight, disabled }: Props) => {
   };
 
   return (
+    <Animated.View entering={!disabled ? SlideInLeft.duration(400) : undefined} exiting={FadeOut}>
     <TouchableOpacity onPress={handleOnPress} disabled={disabled}>
       {flight.connections.length > 0 ? (
         <ConnectingFlightCard flight={flight} disabled={disabled} />
@@ -25,6 +27,7 @@ const FlightCard = ({ flight, disabled }: Props) => {
         <DirectFlightCard flight={flight} disabled={disabled} />
       )}
     </TouchableOpacity>
+      </Animated.View>
   );
 };
 

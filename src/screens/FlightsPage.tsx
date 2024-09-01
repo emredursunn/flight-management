@@ -7,6 +7,7 @@ import { FlightCardModal } from "../components/FlightCardComponents/FlightCardMo
 import { StatusBar } from "expo-status-bar";
 import { useFlightStore } from "../store/flightStore";
 import EmptyPage from "../components/EmptyPage";
+import Animated, { SlideInLeft } from "react-native-reanimated";
 
 const FlightsPage = () => {
 
@@ -18,7 +19,8 @@ const FlightsPage = () => {
         <StatusBar backgroundColor="transparent" />
         <Header />
         <View style={{ flex:1,padding: 16, paddingBottom:0, gap: 16 }}>
-          <FlatList
+          <Animated.FlatList
+            entering={SlideInLeft}
             contentContainerStyle={{ flexGrow:1,gap: 16 }}
             data={flights}
             keyExtractor={(item) => item.code}

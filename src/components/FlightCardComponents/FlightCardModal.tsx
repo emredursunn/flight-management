@@ -14,6 +14,7 @@ import { TYPOGRAPHY } from "../../constants/typography";
 import { BlurView } from "expo-blur";
 import { StatusBar } from "expo-status-bar";
 import { useFlightStore } from "../../store/flightStore";
+import Animated, { FadeOutDown, SlideInDown } from "react-native-reanimated";
 
 export const FlightCardModal = () => {
   const { isModalOpen, closeModal, selectedFlight } = useFlightModalStore();
@@ -47,7 +48,11 @@ export const FlightCardModal = () => {
           <View style={styles.innerOverlay}>
             <StatusBar backgroundColor="transparent" />
             {selectedFlight && (
-              <>
+              <Animated.View
+                entering={SlideInDown.duration(800)}
+                exiting={FadeOutDown.duration(800)}
+                style={{ width:'100%',gap: 16 }}
+              >
                 <FlightCard flight={selectedFlight} disabled={true} />
                 <TouchableOpacity
                   style={styles.removeButton}
@@ -62,7 +67,7 @@ export const FlightCardModal = () => {
                     Remove Flight
                   </Text>
                 </TouchableOpacity>
-              </>
+              </Animated.View>
             )}
           </View>
         </BlurView>
