@@ -1,5 +1,5 @@
 export type Plane = {
-    id:string,
+    code:string,
     name:string,
     logo:any
 }

@@ -6,10 +6,8 @@ export type Flight = {
   code: string;
   from: string;
   to: string;
-  departureDate: string;
-  departureTime: string;
-  arrivalDate: string;
-  arrivalTime: string;
+  departureDateTime: Date;
+  arrivalDateTime: Date;
   plane: Plane;
   connections: Connection[];
 };
