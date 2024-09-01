@@ -1,6 +1,6 @@
 import { Plane } from "./Plane";
 
-export type FlightLeg = Omit<Flight, 'transfers'>
+export type Connection = Omit<Flight, 'connections'>
 
 export type Flight = {
   code: string;
@@ -11,5 +11,10 @@ export type Flight = {
   arrivalDate: string;
   arrivalTime: string;
   plane: Plane;
-  transfers: FlightLeg[];
+  connections: Connection[];
 };
+
+export enum FlightStatus {
+    ARRIVAL = "Arrival",
+    DEPARTURE = "Departure"
+}
