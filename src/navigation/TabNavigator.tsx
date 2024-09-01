@@ -39,12 +39,13 @@ export const Tabs = () => {
         name="Plans"
         component={PlansPage}
         options={{
-          tabBarIcon: () => (
+          tabBarIcon: ({focused}) => (
             <Image
               source={require("../../assets/Calendar-Heart.png")}
               style={{
                 width: 18.95,
                 height: 18.95,
+                tintColor:focused ? COLORS.gray[900] : undefined
               }}
             />
           ),
@@ -54,12 +55,13 @@ export const Tabs = () => {
         name="Flights"
         component={FlightsPage}
         options={{
-          tabBarIcon: () => (
+          tabBarIcon: ({focused}) => (
             <Image
               source={require("../../assets/BottomTabPlane.png")}
               style={{
                 width: 18.95,
                 height: 18.95,
+                tintColor:focused ? COLORS.gray[900] : undefined
               }}
             />
           ),
@@ -69,12 +71,13 @@ export const Tabs = () => {
         name="Me"
         component={ProfilePage}
         options={{
-          tabBarIcon: () => (
+          tabBarIcon: ({focused}) => (
             <Image
               source={require("../../assets/User.png")}
               style={{
                 width: 18.95,
                 height: 18.95,
+                tintColor:focused ? COLORS.gray[900] : undefined
               }}
             />
           ),
