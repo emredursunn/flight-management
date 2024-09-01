@@ -253,7 +253,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         color:'#000000',
         textAlign:'center'
     },
-    caption1Semibold:{
+    caption1Medium:{
         fontFamily: 'SF Pro',
         fontSize: 12,
         fontWeight: 'semibold',
@@ -272,7 +272,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         fontStyle:'italic',
         textAlign:'center'
     },
-    caption1SemiboldItalic:{
+    caption1MediumItalic:{
         fontFamily: 'SF Pro',
         fontSize: 12,
         fontWeight: 'semibold',
