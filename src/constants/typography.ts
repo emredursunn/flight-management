@@ -4,7 +4,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     largeTitleRegular: {
         
         fontSize: 34,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 41,
         letterSpacing: -0.4,
         color:'#000000',
@@ -22,7 +22,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     title1Regular: {
         
         fontSize: 28,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 34,
         letterSpacing: -0.4,
         color:'#000000',
@@ -40,7 +40,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     title2Regular: {
         
         fontSize: 22,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 28,
         letterSpacing: -0.4,
         color:'#000000',
@@ -58,7 +58,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     title3Regular: {
         
         fontSize: 20,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 25,
         letterSpacing: -0.4,
         color:'#000000',
@@ -67,7 +67,7 @@ export const TYPOGRAPHY = StyleSheet.create({
       title3Semibold: {
         
         fontSize: 20,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 25,
         letterSpacing: -0.4,
         color:'#000000',
@@ -76,7 +76,7 @@ export const TYPOGRAPHY = StyleSheet.create({
       headlineSemibold:{
         
         fontSize: 17,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 22,
         letterSpacing: -0.4,
         color:'#000000',
@@ -85,7 +85,7 @@ export const TYPOGRAPHY = StyleSheet.create({
       headlineSemiboldItalic:{
         
         fontSize: 17,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 22,
         letterSpacing: -0.4,
         color:'#000000',
@@ -95,7 +95,7 @@ export const TYPOGRAPHY = StyleSheet.create({
       bodyRegular:{
         
         fontSize: 17,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 22,
         letterSpacing: -0.4,
         color:'#000000',
@@ -104,7 +104,7 @@ export const TYPOGRAPHY = StyleSheet.create({
       bodySemibold:{
         
         fontSize: 17,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 22,
         letterSpacing: -0.4,
         color:'#000000',
@@ -113,7 +113,7 @@ export const TYPOGRAPHY = StyleSheet.create({
       bodyRegularItalic:{
         
         fontSize: 17,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 22,
         letterSpacing: -0.4,
         color:'#000000',
@@ -123,7 +123,7 @@ export const TYPOGRAPHY = StyleSheet.create({
       bodySemiboldItalic:{
         
         fontSize: 17,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 22,
         letterSpacing: -0.4,
         color:'#000000',
@@ -133,7 +133,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     calloutRegular:{
         
         fontSize: 16,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 21,
         letterSpacing: -0.4,
         color:'#000000',
@@ -142,7 +142,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     calloutSemibold:{
         
         fontSize: 16,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 21,
         letterSpacing: -0.4,
         color:'#000000',
@@ -151,7 +151,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     calloutRegularItalic:{
         
         fontSize: 16,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 21,
         letterSpacing: -0.4,
         color:'#000000',
@@ -161,7 +161,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     calloutSemiboldItalic:{
         
         fontSize: 16,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 21,
         letterSpacing: -0.4,
         color:'#000000',
@@ -171,7 +171,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     subheadlineRegular:{
         
         fontSize: 15,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 20,
         letterSpacing: -0.4,
         color:'#000000',
@@ -180,7 +180,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     subheadlineSemibold:{
         
         fontSize: 15,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 20,
         letterSpacing: -0.4,
         color:'#000000',
@@ -189,7 +189,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     subheadlineRegularItalic:{
         
         fontSize: 15,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 20,
         letterSpacing: -0.4,
         color:'#000000',
@@ -199,7 +199,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     subheadlineSemiboldItalic:{
         
         fontSize: 15,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 20,
         letterSpacing: -0.4,
         color:'#000000',
@@ -209,7 +209,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     footnoteRegular:{
         
         fontSize: 13,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 18,
         letterSpacing: -0.4,
         color:'#000000',
@@ -218,7 +218,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     footnoteSemibold:{
         
         fontSize: 13,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 18,
         letterSpacing: -0.4,
         color:'#000000',
@@ -227,7 +227,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     footnoteRegularItalic:{
         
         fontSize: 13,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 18,
         letterSpacing: -0.4,
         color:'#000000',
@@ -237,7 +237,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     footnoteSemiboldItalic:{
         
         fontSize: 13,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 18,
         letterSpacing: -0.4,
         color:'#000000',
@@ -247,7 +247,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption1Regular:{
         
         fontSize: 12,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 16,
         letterSpacing: -0.4,
         color:'#000000',
@@ -256,7 +256,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption1Medium:{
         
         fontSize: 12,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 16,
         letterSpacing: -0.4,
         color:'#000000',
@@ -265,7 +265,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption1RegularItalic:{
         
         fontSize: 12,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 16,
         letterSpacing: -0.4,
         color:'#000000',
@@ -275,7 +275,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption1MediumItalic:{
         
         fontSize: 12,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 16,
         letterSpacing: -0.4,
         color:'#000000',
@@ -285,7 +285,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption2Regular:{
         
         fontSize: 11,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 13,
         letterSpacing: -0.4,
         color:'#000000',
@@ -294,7 +294,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption2Semibold:{
         
         fontSize: 11,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 13,
         letterSpacing: -0.4,
         color:'#000000',
@@ -303,7 +303,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption2RegularItalic:{
         
         fontSize: 11,
-        fontWeight: 'regular',
+        fontWeight: '400',
         lineHeight: 13,
         letterSpacing: -0.4,
         color:'#000000',
@@ -313,7 +313,7 @@ export const TYPOGRAPHY = StyleSheet.create({
     caption2SemiboldItalic:{
         
         fontSize: 11,
-        fontWeight: 'semibold',
+        fontWeight: '600',
         lineHeight: 13,
         letterSpacing: -0.4,
         color:'#000000',
