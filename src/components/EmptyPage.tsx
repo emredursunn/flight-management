@@ -2,12 +2,11 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { TYPOGRAPHY } from '../constants/typography'
 import COLORS from '../constants/colors'
+import { useFlightStore } from '../store/flightStore'
 
-type Props = {
-    addFlight: () => void
-}
+const EmptyPage = () => {
+  const {addFlightAsync} = useFlightStore() 
 
-const EmptyPage = ({addFlight}:Props) => {
   return (
     <View style={{flex:1, alignItems:'center', justifyContent:'center', paddingHorizontal:16, gap:24}}>
         <View style={{gap:16, width:'100%'}}>
@@ -19,7 +18,7 @@ const EmptyPage = ({addFlight}:Props) => {
       <Text style={TYPOGRAPHY.bodyRegular}>Let's get started on your jet lag plan! Add your upcoming flights to begin your journey.</Text>
       </View>
         </View>
-        <TouchableOpacity onPress={addFlight} style={{borderRadius:14,paddingVertical:14,paddingHorizontal:20, gap:10, backgroundColor:COLORS.orange[600]}}>
+        <TouchableOpacity onPress={addFlightAsync} style={{borderRadius:14,paddingVertical:14,paddingHorizontal:20, gap:10, backgroundColor:COLORS.orange[600]}}>
             <Text style={[TYPOGRAPHY.bodySemibold, {color:COLORS.white}]}>Add Flight</Text>
         </TouchableOpacity>
     </View>
