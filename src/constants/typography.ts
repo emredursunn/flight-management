@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const TYPOGRAPHY = StyleSheet.create({
     largeTitleRegular: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 34,
         fontWeight: 'regular',
         lineHeight: 41,
@@ -11,7 +11,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
       largeTitleBold: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 34,
         fontWeight: 'bold',
         lineHeight: 41,
@@ -20,7 +20,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
     title1Regular: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 28,
         fontWeight: 'regular',
         lineHeight: 34,
@@ -29,7 +29,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
       title1Bold: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 28,
         fontWeight: 'bold',
         lineHeight: 34,
@@ -38,7 +38,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
     title2Regular: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 22,
         fontWeight: 'regular',
         lineHeight: 28,
@@ -47,7 +47,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
       title2Bold: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 22,
         fontWeight: 'bold',
         lineHeight: 28,
@@ -56,7 +56,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
     title3Regular: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 20,
         fontWeight: 'regular',
         lineHeight: 25,
@@ -65,7 +65,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
       title3Semibold: {
-        fontFamily: 'SF Pro',
+        
         fontSize: 20,
         fontWeight: 'semibold',
         lineHeight: 25,
@@ -74,7 +74,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
       headlineSemibold:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 17,
         fontWeight: 'semibold',
         lineHeight: 22,
@@ -83,7 +83,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
       },
       headlineSemiboldItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 17,
         fontWeight: 'semibold',
         lineHeight: 22,
@@ -93,7 +93,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
       bodyRegular:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 17,
         fontWeight: 'regular',
         lineHeight: 22,
@@ -102,7 +102,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
       bodySemibold:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 17,
         fontWeight: 'semibold',
         lineHeight: 22,
@@ -111,7 +111,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
       bodyRegularItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 17,
         fontWeight: 'regular',
         lineHeight: 22,
@@ -121,7 +121,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
       bodySemiboldItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 17,
         fontWeight: 'semibold',
         lineHeight: 22,
@@ -131,7 +131,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     calloutRegular:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 16,
         fontWeight: 'regular',
         lineHeight: 21,
@@ -140,7 +140,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     calloutSemibold:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 16,
         fontWeight: 'semibold',
         lineHeight: 21,
@@ -149,7 +149,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     calloutRegularItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 16,
         fontWeight: 'regular',
         lineHeight: 21,
@@ -159,7 +159,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     calloutSemiboldItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 16,
         fontWeight: 'semibold',
         lineHeight: 21,
@@ -169,7 +169,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     subheadlineRegular:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 15,
         fontWeight: 'regular',
         lineHeight: 20,
@@ -178,7 +178,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     subheadlineSemibold:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 15,
         fontWeight: 'semibold',
         lineHeight: 20,
@@ -187,7 +187,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     subheadlineRegularItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 15,
         fontWeight: 'regular',
         lineHeight: 20,
@@ -197,7 +197,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     subheadlineSemiboldItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 15,
         fontWeight: 'semibold',
         lineHeight: 20,
@@ -207,7 +207,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     footnoteRegular:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 13,
         fontWeight: 'regular',
         lineHeight: 18,
@@ -216,7 +216,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     footnoteSemibold:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 13,
         fontWeight: 'semibold',
         lineHeight: 18,
@@ -225,7 +225,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     footnoteRegularItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 13,
         fontWeight: 'regular',
         lineHeight: 18,
@@ -235,7 +235,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     footnoteSemiboldItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 13,
         fontWeight: 'semibold',
         lineHeight: 18,
@@ -245,7 +245,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption1Regular:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 12,
         fontWeight: 'regular',
         lineHeight: 16,
@@ -254,7 +254,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption1Medium:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 12,
         fontWeight: 'semibold',
         lineHeight: 16,
@@ -263,7 +263,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption1RegularItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 12,
         fontWeight: 'regular',
         lineHeight: 16,
@@ -273,7 +273,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption1MediumItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 12,
         fontWeight: 'semibold',
         lineHeight: 16,
@@ -283,7 +283,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption2Regular:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 11,
         fontWeight: 'regular',
         lineHeight: 13,
@@ -292,7 +292,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption2Semibold:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 11,
         fontWeight: 'semibold',
         lineHeight: 13,
@@ -301,7 +301,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption2RegularItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 11,
         fontWeight: 'regular',
         lineHeight: 13,
@@ -311,7 +311,7 @@ export const TYPOGRAPHY = StyleSheet.create({
         textAlign:'center'
     },
     caption2SemiboldItalic:{
-        fontFamily: 'SF Pro',
+        
         fontSize: 11,
         fontWeight: 'semibold',
         lineHeight: 13,
