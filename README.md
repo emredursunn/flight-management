@@ -40,9 +40,9 @@ A flight management app which generated random flights.
 
 ---
 
-## Contributing 🤝
+## Note 
 
-This project was created as a case study for **MVP Studio**. Contributions are welcome, but please note that this project was developed under the scope of a specific case study. If you have suggestions or improvements, feel free to submit a pull request.
+This project was created as a case study for **MVP Studio**.
 
 ## Contact
 Mail: emredursun908@gmail.com
