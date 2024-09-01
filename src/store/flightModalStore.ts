@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { Flight } from "../types/Flight";
 
-interface FlightModalStore {
+interface FlightModalStoreState {
   isModalOpen: boolean;
   selectedFlight: Flight | null;
   openModal: () => void;
@@ -9,10 +9,10 @@ interface FlightModalStore {
   setSelectedFlight: (flight: Flight) => void;
 }
 
-export const useFlightModalStore = create<FlightModalStore>((set) => ({
+export const useFlightModalStore = create<FlightModalStoreState>((set) => ({
   isModalOpen: false,
   selectedFlight: null,
   openModal: () => set({ isModalOpen: true }),
-  closeModal: () => set({ isModalOpen: false, selectedFlight: null }),
+  closeModal: () => set({ isModalOpen: false }),
   setSelectedFlight: (flight: Flight) => set({ selectedFlight: flight }),
 }));
