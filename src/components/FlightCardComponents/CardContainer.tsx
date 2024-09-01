@@ -23,5 +23,6 @@ const styles = StyleSheet.create({
         borderWidth: 0.5,
         borderColor: COLORS.gray[200],
         gap: 16,
+        backgroundColor:COLORS.white
       },
 })

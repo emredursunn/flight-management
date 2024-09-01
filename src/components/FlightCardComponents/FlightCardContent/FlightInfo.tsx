@@ -1,9 +1,9 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { TYPOGRAPHY } from "../../constants/typography";
-import COLORS from "../../constants/colors";
-import { FlightStatus } from "../../types/Flight";
-import { formatDate, formatTime } from "../../utils/helpers";
+import { TYPOGRAPHY } from "../../../constants/typography";
+import COLORS from "../../../constants/colors";
+import { FlightStatus } from "../../../types/Flight";
+import { formatDate, formatTime } from "../../../utils/helpers";
 
 type Props = {
   status: FlightStatus;
@@ -18,8 +18,8 @@ const FlightInfo = ({ dateTime, place, status }: Props) => {
         <Image
           source={
             status === FlightStatus.DEPARTURE
-              ? require("../../../assets/Takeoff.png")
-              : require("../../../assets/Landing.png")
+              ? require("../../../../assets/Takeoff.png")
+              : require("../../../../assets/Landing.png")
           }
           style={{ width: 20, height: 20 }}
         />

@@ -1,9 +1,9 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Connection, Flight } from '../../types/Flight'
-import { TYPOGRAPHY } from '../../constants/typography'
-import COLORS from '../../constants/colors'
-import { calculateFlightDuration } from '../../utils/helpers'
+import { Connection, Flight } from '../../../types/Flight'
+import { TYPOGRAPHY } from '../../../constants/typography'
+import COLORS from '../../../constants/colors'
+import { calculateFlightDuration } from '../../../utils/helpers'
 
 type Props = {
     flight:Flight | Connection
@@ -16,12 +16,13 @@ const PlaneInfo = ({flight}:Props) => {
           width: "100%",
           justifyContent: "space-between",
           flexDirection: "row",
+          alignItems:'center'
         }}
       >
-        <View style={{ gap: 8, flexDirection: "row" }}>
+        <View style={{ gap: 8, flexDirection: "row",alignItems:'center' }}>
           <Image source={flight.plane.logo} style={{ width: 24, height: 24 }} />
           <Text style={TYPOGRAPHY.footnoteSemibold}>
-            {flight.plane.id + " - " + flight.plane.name}
+            {flight.plane.code + "-" + flight.code + " - " + flight.plane.name}
           </Text>
         </View>
         <View style={styles.flightDurationBox}>

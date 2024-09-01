@@ -1,19 +1,21 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import { Connection, Flight, FlightStatus } from "../../types/Flight";
+import { Connection, Flight, FlightStatus } from "../../../types/Flight";
 import PlaneInfo from "./PlaneInfo";
 import FlightInfo from "./FlightInfo";
 import PlaneIcon from "./PlaneIcon";
-import COLORS from "../../constants/colors";
+import COLORS from "../../../constants/colors";
+import CardBlankShape from "./CardBlankShape";
 
 type Props = {
   flight: Flight | Connection;
+  disabled?:boolean
 };
 
-const FlightCardContent = ({ flight }: Props) => {
+const FlightCardContent = ({ flight,disabled }: Props) => {
   return (
     <>
-      <View style={{ gap: 16, padding: 16,backgroundColor:COLORS.white }}>
+      <View style={{ gap: 16, padding: 16,backgroundColor:COLORS.white, borderRadius:14 }}>
         {/* PLANE INFO AND FLIGHT DURATION */}
         <PlaneInfo flight={flight} />
 
@@ -39,14 +41,7 @@ const FlightCardContent = ({ flight }: Props) => {
       </View>
 
       {/* TICKET LEFT BLANK SHAPE */}
-      <View style={[styles.blankShapeContainer, { left: 0 }]}>
-        <View style={[styles.blankShape, { left: -8 }]} />
-      </View>
-
-      {/* TICKET RIGHT BLANK SHAPE */}
-      <View style={[styles.blankShapeContainer, { right: 0 }]}>
-        <View style={[styles.blankShape, { right: -8 }]} />
-      </View>
+      <CardBlankShape disabled={disabled}/>
     </>
   );
 };

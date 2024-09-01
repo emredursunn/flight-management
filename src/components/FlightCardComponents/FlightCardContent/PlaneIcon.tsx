@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import COLORS from '../../constants/colors'
+import COLORS from '../../../constants/colors'
 
 const PlaneIcon = () => {
   return (
@@ -13,16 +13,14 @@ const PlaneIcon = () => {
       }}
     >
       <Image
-        source={require("../../../assets/Line.png")}
+        source={require("../../../../assets/Line.png")}
         style={{
           position: "absolute",
           width: "100%",
-          borderWidth: 1,
-          borderColor: COLORS.gray[200],
         }}
       />
       <Image
-        source={require("../../../assets/Plane.png")}
+        source={require("../../../../assets/Plane.png")}
         style={{ width: 24, height: 24 }}
       />
     </View>
